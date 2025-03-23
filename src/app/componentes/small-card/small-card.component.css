@@ -1,25 +1,30 @@
-.container_small-card{
+.container_small-card {
   width: 700px;
   margin-bottom: 15px;
 }
 
-.container-_small-card{
-
-    display: flex;
-    flex-direction: row;
-
+.container_small-card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centraliza verticalmente a imagem e o texto */
 }
 
-.small-card_photo > img{
+.small-card_photo > img {
   width: 200px;
   min-width: 200px;
   margin-right: 20px;
 }
 
-.small-card-title{
+.small-card_title {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: center; /* Centraliza o texto verticalmente */
 }
 
-.container-
+.small-card_title > h1 {
+  font-size: 30px;
+  margin: 0; /* Remove margens padrão do h1 */
+}
+
+.container_small-card-separator {
+  margin-top: 10px;
+}

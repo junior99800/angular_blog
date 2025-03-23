@@ -1,11 +1,39 @@
-.container_articles{
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/* Layout principal */
+.container_articles {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-header{
+/* Seção principal */
+.articles_main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Seção de artigos pequenos */
+.articles_other {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Animação nos cards */
+app-menu-card, app-small-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+app-menu-card:hover, app-small-card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .container_articles {
+    grid-template-columns: 1fr;
+  }
 }
